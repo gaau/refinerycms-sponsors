@@ -1,3 +1,4 @@
+<% unless @rand_sponsor.nil? %>
 <h3><%= t('sponsors.sidebar.title') %></h3>
 <div class="sponsor">
 	<div class="sponsorLogo">
@@ -52,4 +53,6 @@
 	});
 	</script>
 	<% end %>
+<% end %>
+
 <% end %>

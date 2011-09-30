@@ -1,0 +1,62 @@
+.sponsor { 
+	margin: 0.7em;
+	float: left;
+	position:relative;
+	height: 163px;
+	width: 163px;
+
+	background: white;
+	
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	
+	border: 1px solid #aaa;
+	-moz-box-shadow: 0px 0px 3px #666;
+	-webkit-box-shadow: 0px 0px 3px #666;
+	box-shadow: 0px 0px 3px #666;
+}
+.sponsorLogo {
+	position:absolute;
+	left:0;
+	top:0;
+	height: 161px;
+	width: 161px;
+		
+	border:1px solid #ddd;
+	
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+}
+.sponsorLogo span { display: inline-block; }
+.sponsorLogo img {
+	padding: 2px;
+}
+.sponsorLogo:hover {
+	border:1px solid #999;
+    -moz-box-shadow:0 0 20px #999 ;
+    -webkit-box-shadow:0 0 20px #999 ;
+    box-shadow:0 0 20px #999 ;
+}
+.sponsorCard { 
+	border:1px solid #ddd;
+	display: none; 
+	height: 161px;
+	width: 161px;
+}
+.sponsorCard:hover {
+	border:1px solid #999;
+    -moz-box-shadow:0 0 20px #999 ;
+    -webkit-box-shadow:0 0 20px #999 ;
+    box-shadow:0 0 20px #999 ;
+}
+.sponsorUrl { 
+	padding: 1em;
+	font-weight: bold;
+}
+.sponsorDesc {
+	padding: 0 1em;
+}
+.clear { clear: both; }
+.centerer:hover {
+	background: none;
+}

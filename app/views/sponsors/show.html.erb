@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @sponsor.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+	<% unless @sponsor.url.size < 1 %>
+      <%=raw link_to @sponsor.title, @sponsor.url %>
+	<% else %>
+      <%=raw @sponsor.title %>
+	<% end %>
+    </p>
+  </section>
+  <section>
+    <h1>Logo</h1>
+    <p>
+      <%= image_fu @sponsor.logo, '150x150' %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @sponsor.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="sponsors">
+      <% @sponsors.each do |sponsor| %>
+        <li>
+          <%= link_to sponsor.title, sponsor_path(sponsor) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
+
+<% content_for :stylesheets, stylesheet_link_tag('sponsors') %>

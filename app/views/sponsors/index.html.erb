@@ -1,0 +1,62 @@
+<% content_for :body_content_left do %>
+  <div id="sponsors">
+    <% @sponsors.each do |sponsor| %>
+      <div class="sponsor">
+		<div class="sponsorLogo">
+			<table width="100%" height="100%" align="center" valign="center">
+			 	<tr class="centerer">
+				  <td>
+        		  	<%= image_fu sponsor.logo, '155x155', :title => sponsor.title %>
+		   		  </td>
+				</tr>
+		   	  </table>
+			<span></span>
+		</div>
+		<div class="sponsorCard">
+			<div class="sponsorUrl">
+				<% unless sponsor.url.size < 1 %>
+		      		<%=raw link_to sponsor.title, sponsor.url, :target => "_blank" %>
+				<% else %>
+		      		<%=raw sponsor.title %>
+				<% end %>
+			</div>
+			<div class="sponsorDesc">
+	      		<%=raw sponsor.description %>
+			</div>
+		</div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<% content_for :body_content_right do %>
+	  <%= render :partial => "/sponsors/sidebar", :locals => {:sponsor_already => true } %>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
+
+<% content_for :stylesheets, stylesheet_link_tag('sponsors') %>
+
+<% content_for :javascripts do %>
+<%= jquery_include_tags(:jquery_ui => true) %>
+<%= javascript_include_tag('jquery.flip.min.js') %>
+<script>
+$(document).ready(function(){
+	$('.sponsor').bind("click",function(){
+		var elem = $(this);
+		if(elem.data('flipped'))
+		{
+			elem.children("div:first").show("drop");
+			elem.children("div:last").hide();
+			elem.data('flipped',false)
+		}
+		else
+		{
+			elem.children("div:first").hide("fold");
+			elem.children("div:last").show();
+	 		elem.data('flipped',true);
+		}
+	});  
+});
+</script>
+<% end %>

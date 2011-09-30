@@ -3,7 +3,7 @@ class Sponsor < ActiveRecord::Base
   acts_as_indexed :fields => [:title, :url, :description]
 
   validates :title, :presence => true, :uniqueness => true
-  validates_presence_of :image
+  validates_presence_of :logo
   
   has_friendly_id :title, :use_slug => true
   

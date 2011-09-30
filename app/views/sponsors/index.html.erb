@@ -30,7 +30,11 @@
 <% end %>
 
 <% content_for :body_content_right do %>
-	  <%= render :partial => "/sponsors/sidebar", :locals => {:sponsor_already => true } %>
+	<% if File.exists?(RAILS_ROOT+"/app/views/shared/_sidebar.html.erb") %>
+		<%= render :partial => "/shared/sidebar" %>
+	<% else %>
+		<%= render :partial => "/sponsors/sidebar", :locals => {:sponsor_already => true } %>
+	<% end %>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>

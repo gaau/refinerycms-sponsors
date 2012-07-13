@@ -4,13 +4,13 @@ Gem::Specification.new do |s|
   s.email             = 'olegunnar@gmail.com'
   s.homepage          = "https://github.com/gaau/refinerycms-sponsors"
   s.name              = 'refinerycms-sponsors'
-  s.version           = '1.0'
+  s.version           = '2.0'
   s.description       = 'Ruby on Rails Sponsors engine for Refinery CMS'
-  s.date              = '2011-09-29'
+  s.date              = '2012-07-13'
   s.summary           = 'Sponsors engine for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*']
   
   # dependency
-  s.add_dependency    'refinerycms-core',   '~> 1.0.3'
+  s.add_dependency    'refinerycms-core',   '~> 2.0.0'
 end

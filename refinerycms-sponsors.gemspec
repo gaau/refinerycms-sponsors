@@ -12,5 +12,5 @@ Gem::Specification.new do |s|
   s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*']
   
   # dependency
-  s.add_dependency    'refinerycms-core',   '~> 2.0.0'
+  s.add_dependency    'refinerycms-core'
 end

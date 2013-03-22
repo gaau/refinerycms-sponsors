@@ -1,7 +1,10 @@
 # Sponsors engine for Refinery CMS.
-# based on 'Sponsors Flip Wall' - [tutorialzine.com/2010/03/sponsor-wall-flip-jquery-css](http://tutorialzine.com/2010/03/sponsor-wall-flip-jquery-css/) ("Demo")
+ based on 'Sponsors Flip Wall' - [tutorialzine.com/2010/03/sponsor-wall-flip-jquery-css](http://tutorialzine.com/2010/03/sponsor-wall-flip-jquery-css/) ("Demo")
 
-# to install, add: 'gem "refinerycms-sponsors", :git => "git://github.com/gaau/refinerycms-sponsors.git"' to gemfile
-# remember to 'rails g refinerycms_sponsors', 'rake db:migrate' afterwards!
+# Installation
+add: 'gem "refinerycms-sponsors", :git => "git://github.com/gaau/refinerycms-sponsors.git"' to gemfile
 
-# Demo at [beta.normisjonvennesla.no/sponsors](http://beta.normisjonvennesla.no/sponsors)
+remember to 'rails g refinerycms_sponsors', 'rake db:migrate' afterwards!
+
+# Engine demo 
+at [beta.normisjonvennesla.no/sponsors](http://beta.normisjonvennesla.no/sponsors)

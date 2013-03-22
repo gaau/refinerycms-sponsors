@@ -3,3 +3,5 @@
 
 # to install, add: 'gem "refinerycms-sponsors", :git => "git://github.com/gaau/refinerycms-sponsors.git"' to gemfile
 # remember to 'rails g refinerycms_sponsors', 'rake db:migrate' afterwards!
+
+# Demo at [[http://beta.normisjonvennesla.no/sponsors]]

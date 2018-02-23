@@ -7,4 +7,4 @@ add: 'gem "refinerycms-sponsors", :git => "git://github.com/gaau/refinerycms-spo
 remember to 'rails g refinerycms_sponsors', 'rake db:migrate' afterwards!
 
 # Engine demo 
-at [beta.normisjonvennesla.no/sponsors](http://beta.normisjonvennesla.no/sponsors)
+The page that demonstrated the plugin is sadly no longer up
